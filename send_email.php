@@ -1,4 +1,22 @@
 <?php
+
+header("Access-Control-Allow-Origin: *"); // Eğer gerekli ise, CORS hatasını engellemek için
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  // POST işlemlerini buraya yazın
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $message = $_POST['message'];
+
+  // E-posta gönderme işlemi
+  // ...
+
+  http_response_code(200);
+} else {
+  http_response_code(405);
+}
+
+
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
