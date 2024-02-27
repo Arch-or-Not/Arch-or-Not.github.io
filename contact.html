@@ -1,19 +1,24 @@
-
 <!DOCTYPE html>
 <html lang="tr">
 <head>
+  <!-- Meta ve başlık -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>İletişim - KOSBİ FPV</title>
+  <!-- Stil dosyası bağlantısı -->
   <link rel="stylesheet" href="style.css">
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
+  <!-- Başlık Bölümü -->
   <header>
+    <!-- Logo ve site adı -->
     <h1><a href="index.html"><img src="images/kosbi-fpv-logo.png" alt="KOSBİ FPV Logo"></a></h1>
     <h1><a href="index.html">KOSBİ FPV Drone Takımı</a></h1>
+    <!-- Navigasyon Menüsü -->
     <nav class="navbar">
-      
+      <!-- Navigasyon Bağlantıları -->
       <ul class="nav-links">
         <li><a href="index.html">Anasayfa</a></li>   
         <li><a href="flights.html">Uçuşlarımız</a></li>
@@ -21,6 +26,7 @@
         <li><a href="contact.html">İletişim</a></li>
         <li><a href="http://www.kosbimtal.k12.tr" target="_blank">Okulumuz</a></li>
       </ul>
+      <!-- Hamburger Menü Butonu -->
       <div class="burger">
         <div class="line1"></div>
         <div class="line2"></div>
@@ -28,11 +34,11 @@
       </div>
     </nav>
   </header>
+  
+  <!-- Yan Menü -->
   <div id="YanMenu" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-  
-    &times;</a>
-  
+    <!-- Yan Menü Bağlantıları -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <li><a href="index.html">Anasayfa</a></li>   
     <li><a href="flights.html">Uçuşlarımız</a></li>
     <li><a href="about.html">Hakkımızda</a></li>
@@ -40,32 +46,39 @@
     <li><a href="http://www.kosbimtal.k12.tr" target="_blank">Okulumuz</a></li>
   </div>
   
-  
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="mobile">
-  
-    &#9776; </span>
+  <!-- Mobil Menü Butonu -->
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="mobile">&#9776; </span>
   </header>
 
+  <!-- İçerik Bölümü -->
   <div class="container">
+    <!-- İletişim Formu Başlığı -->
     <h2>İletişim</h2>
+    <!-- Form Açıklama Metni -->
     <p>Bize mesaj göndermek için aşağıdaki formu doldurabilirsiniz:</p> <br><br>
+    <!-- İletişim Formu -->
     <form id="contactForm">
+      <!-- Ad Alanı -->
       <label for="name">Adınız:</label>
       <input type="text" id="name" name="name" required>
       
+      <!-- E-posta Alanı -->
       <label for="email">E-posta Adresiniz:</label>
       <input type="email" id="email" name="email" required>
       
+      <!-- Mesaj Alanı -->
       <label for="message">Mesajınız:</label>
       <textarea id="message" name="message" required></textarea>
       
+      <!-- Gönder Butonu -->
       <button type="submit">Gönder</button>
     </form>
+    <!-- Başarı Mesajı -->
     <div id="successMessage" style="display: none;">
       Mesajınız başarıyla gönderildi. Size en kısa sürede dönüş yapacağız.
     </div>
+    
   </div>
-
   <script src="script.js"></script>
 </body>
 </html>
