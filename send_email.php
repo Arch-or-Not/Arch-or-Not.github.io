@@ -26,4 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 } else {
   http_response_code(405); // Method Not Allowed durum kodu
 }
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 ?>
