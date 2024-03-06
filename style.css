@@ -85,7 +85,7 @@ body {
     font-weight: bold;
   }
   
-  /* İletişim Formu Stili Başlangıcı */
+  /* İletişim Formu Stili*/
   form {
     max-width: 500px;
     margin: 0 auto;
@@ -265,3 +265,81 @@ body {
       display:none;
     }
   }
+/* Diğer stiller buraya eklenebilir */
+
+.contact-icons {
+  display: inline-block;
+  margin-right: 20px;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-icons a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  border-radius: 50%;
+  line-height: 50px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-icons img {
+  width: 35px; /* Logoların boyutunu buradan ayarlayabilirsiniz */
+  height: 35px;
+  margin: 10px; /* Logoların içerideki boşluğunu ayarlar */
+}
+
+.contact-icons p {
+  color: #fff;
+}
+
+.contact-icons.email-icon {
+  background-image: url("images/mail.png");
+  background-size: cover;
+}
+
+.contact-icons.whatsapp-icon {
+  background-image: url("images/whatsapp.png");
+  background-size: cover;
+}
+
+.icon:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.icon a:hover {
+  background-color: #fff;
+  color: #333;
+}
+/* style.css */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.thumbnails img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.thumbnails img:hover {
+  transform: scale(1.1);
+}
+
+.main-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.card{
+  border-radius: 10px;
+}
